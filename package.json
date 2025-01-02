@@ -6,7 +6,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "react-scripts build",
+		"build": "vite build",
 		"serve": "vite preview",
 		"lint": "eslint .",
 		"preview": "vite preview",
