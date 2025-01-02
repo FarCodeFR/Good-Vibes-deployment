@@ -1,0 +1,22 @@
+{
+	"version": 2,
+	"builds": [
+		{
+			"src": "src/main.tsx",
+			"use": "@vercel/node"
+		},
+		{
+			"src": "server/index.js",
+			"use": "@vercel/node"
+		}
+	],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "src/main.tsx"
+		}
+	],
+	"env": {
+		"MY_ENV_VAR": "value"
+	}
+}
