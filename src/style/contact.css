@@ -1,0 +1,211 @@
+#display-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+#header-form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+}
+
+#display-form p {
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+#form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10em 2fr 10em;
+  gap: 0 1em;
+  width: 60%;
+}
+
+label {
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 2em;
+}
+
+#first-section,
+#second-section,
+#third-section {
+  display: flex;
+  gap: 0.3em;
+  flex-direction: column;
+  align-self: center;
+
+  & input {
+    padding: 0.5em;
+    border: none;
+    width: 25em;
+  }
+
+  & textarea {
+    border: none;
+  }
+}
+
+#first-section input:active {
+  border: none;
+}
+
+#first-section {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#second-section {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: self-end;
+}
+
+#third-section {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+textarea {
+  height: 15em;
+}
+
+#submit-form {
+  grid-area: 3 / 1 / 4 / 3;
+  justify-self: center;
+  align-self: center;
+  font-family: var(--primary-font);
+  border: 4px solid black;
+  color: rgba(238, 146, 173, 1);
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: white;
+  padding: 1em 3em;
+  transition: 0.5s ease-in-out;
+}
+
+#submit-form:hover {
+  background-color: transparent;
+  color: white;
+  padding: 1.5em 3.5em;
+  transition: 0.3s ease-in-out;
+}
+
+#dial-box {
+  border-radius: 8px;
+  height: 30vh;
+}
+
+#dialog-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#data {
+  height: 9em;
+}
+
+#dialog-content p {
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: center;
+}
+
+#close-modal-button {
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: transparent;
+  display: block;
+  width: 2.5em;
+  align-self: flex-end;
+  color: var(--button-color);
+}
+
+#close-modal-button:hover {
+  padding: 0.7em;
+}
+
+#dial-box::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  filter: blur(5px);
+}
+/* * RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 2em;
+  }
+
+  textarea {
+    width: 50em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container-central-contact {
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+  }
+  #display-form {
+    width: 100%;
+    gap: 1em;
+  }
+  #header-form > h1 {
+    font-size: 40px;
+  }
+  #display-form p:first-of-type {
+    font-size: 40px;
+  }
+  #display-form p {
+    font-size: 16px;
+  }
+
+  #first-section {
+    font-size: 12px;
+  }
+
+  #first-section > label {
+    margin-left: 10px;
+  }
+
+  #first-section > input {
+    width: 23em;
+  }
+  #second-section {
+    font-size: 12px;
+  }
+  #second-section > label {
+    margin-left: 10px;
+  }
+  #second-section > input {
+    width: 23em;
+  }
+  #third-section {
+    font-size: 12px;
+  }
+  #third-section > label {
+    margin-left: 10px;
+  }
+  #third-section > textarea {
+    width: 23em;
+  }
+  #submit-form {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    color: rgba(238, 146, 173, 1);
+  }
+}

@@ -1,0 +1,135 @@
+/* ? Container environnement main */
+
+.container-environnement-main {
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+/* ? Container Article */
+
+.container-environnement-article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ? Container environnement */
+.container-environnement {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.trait-environnement > hr {
+  border: 5px solid white;
+  width: 49vw;
+}
+
+/* ? Article container */
+
+.articles-environnement {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px 30px 20px 0px;
+  gap: 16px;
+  width: 40vw;
+  margin: 24px;
+
+  border-radius: 0 20px 0 20px;
+}
+
+/* ? Article figure  */
+
+.articles-figure-environnement {
+  margin-right: 10px;
+  width: 100vw;
+  height: 35vh;
+}
+
+/* ? image */
+
+.image-environnement {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ? Articles */
+
+.articles-hashtag-environnement {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.articles-title-environnement {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+}
+
+.articles-content-environnement {
+  font-family: var(--third-font);
+  text-align: justify;
+}
+
+.articles-link-environnement {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-align: end;
+
+  cursor: pointer;
+}
+
+/* * RESPONSIVE */
+
+@media screen and (max-width: 390px) {
+  .container-environnement-main {
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 5px 30px 20px 30px;
+    height: 100%;
+  }
+  .container-environnement > h1 {
+    font-size: 34px;
+    margin: 0 auto;
+    padding: 2px;
+  }
+  .trait-environnement > hr {
+    display: none;
+    border: 2px solid white;
+  }
+  .container-environnement-article {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .articles-environnement {
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0 auto;
+    gap: 0;
+    padding: 0px 30px 20px 0px;
+  }
+  .articles-hashtag-environnement {
+    font-size: 18px;
+  }
+  .articles-figure-environnement {
+    width: 100%;
+    height: 100%;
+  }
+  .articles-title-environnement {
+    font-size: 16px;
+  }
+  .articles-content-environnement {
+    font-size: 12px;
+  }
+  .articles-link-environnement {
+    font-size: 16px;
+  }
+  .articles-environnement > article {
+    margin-left: 10%;
+    width: 100%;
+  }
+}

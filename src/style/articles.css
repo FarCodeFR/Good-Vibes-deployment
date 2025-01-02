@@ -1,0 +1,140 @@
+.articles-main {
+  display: flex;
+  background-color: white;
+  width: 40vw;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.articles-articles {
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 16px;
+}
+
+.articles-figure {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.articles-figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.articles-hashtag {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  color: var(--primary-color);
+  margin: 2px;
+  font-size: 1rem;
+}
+.articles-title {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  margin: 2px;
+  font-size: 1.2rem;
+}
+.articles-content {
+  font-family: var(--third-font);
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 4px;
+  padding-right: 8px;
+  margin: auto;
+}
+.articles-link {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: end;
+  font-size: 0, 5rem;
+  margin: 0;
+}
+.home-page {
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .home-articles {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scroll-articles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  main {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-page {
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 5px 30px 20px 30px;
+  }
+  .mainArticles > h1 {
+    font-size: 30px;
+    padding: 4px;
+  }
+  .tiret-accueil {
+    width: 38vw;
+    border: 2px solid white;
+  }
+  .home-articles {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .articles-main {
+    width: 100%;
+  }
+  .articles-articles {
+    width: 100vw;
+    flex-direction: column;
+    margin: 10px 0 auto;
+    gap: 0;
+    padding: 0px 30px 20px 0px;
+    font-size: 0.5rem;
+  }
+  .articles-content {
+    font-size: 0.7rem;
+  }
+
+  .articles-hashtag {
+    font-size: 1rem;
+  }
+  .articles-title {
+    font-size: 1rem;
+  }
+  /* .articles-hashtag-societe {
+    font-size: 18px;
+  }
+  .articles-figure-societe {
+    width: 100%;
+    height: 100%;
+  }
+  .articles-title-societe {
+    font-size: 16px;
+  }
+  .articles-content-societe {
+    font-size: 12px;
+  }
+  .articles-link-societe {
+    font-size: 16px;
+  }
+  .articles-societe > article {
+    margin-left: 10%;
+    width: 100%;
+  } */
+}

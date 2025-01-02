@@ -1,0 +1,134 @@
+/* ? Container societe main */
+
+.container-societe-main {
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+/* ? Container Article */
+
+.container-societe-article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ? Container societe */
+.container-societe {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.trait-societe > hr {
+  border: 5px solid white;
+  width: 68vw;
+}
+
+/* ? Article container */
+
+.articles-societe {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px 30px 20px 0px;
+  gap: 16px;
+  width: 40vw;
+  margin: 24px;
+
+  border-radius: 0 20px 0 20px;
+}
+
+/* ? Article figure  */
+
+.articles-figure-societe {
+  margin-right: 10px;
+  width: 100vw;
+  height: 35vh;
+}
+
+/* ? image */
+
+.image-societe {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ? Articles */
+
+.articles-hashtag-societe {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.articles-title-societe {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+}
+
+.articles-content-societe {
+  font-family: var(--third-font);
+  text-align: justify;
+}
+
+.articles-link-societe {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-align: end;
+
+  cursor: pointer;
+}
+
+/* * RESPONSIVE */
+
+@media screen and (max-width: 390px) {
+  .container-societe-main {
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 5px 30px 20px 30px;
+    height: 100%;
+  }
+  .container-societe > h1 {
+    font-size: 30px;
+    padding: 4px;
+  }
+  .trait-societe > hr {
+    width: 38vw;
+    border: 2px solid white;
+  }
+  .container-societe-article {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .articles-societe {
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0 auto;
+    gap: 0;
+    padding: 0px 30px 20px 0px;
+  }
+  .articles-hashtag-societe {
+    font-size: 18px;
+  }
+  .articles-figure-societe {
+    width: 100%;
+    height: 100%;
+  }
+  .articles-title-societe {
+    font-size: 16px;
+  }
+  .articles-content-societe {
+    font-size: 12px;
+  }
+  .articles-link-societe {
+    font-size: 16px;
+  }
+  .articles-societe > article {
+    margin-left: 10%;
+    width: 100%;
+  }
+}

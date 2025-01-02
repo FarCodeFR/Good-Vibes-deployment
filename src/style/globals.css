@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Squada+One&family=Strait&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --background-color: linear-gradient(90deg, #ffce00 0%, #ec8dba 100%);
+  --primary-font: "Shrikhand", serif;
+  --secondary-font: "Squada One", sans-serif;
+  --third-font: "Strait", sans-serif;
+  --primary-color: #ffce00;
+  --secondary-color: #ec8dba;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+main {
+  background: var(--background-color);
+  border: 8px solid black;
+  margin: 2em 3em 3em 3em;
+  padding: 2em;
+}
+
+.home-articles {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tiret-accueil {
+  border: 6px solid white;
+  margin: 0;
+}
+.scroll-articles {
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-color: var(--primary-color) var(--secondary-color);
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 390px) {
+  h1 {
+    /* font-size: 2rem; */
+  }
+}

@@ -1,0 +1,22 @@
+/* ? Container footer */
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  bottom: 0;
+}
+
+.container-footer > h1 {
+  font-size: 24px;
+  margin: 0 auto;
+
+  p {
+    font-size: 23px;
+  }
+}

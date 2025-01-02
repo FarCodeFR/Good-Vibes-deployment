@@ -1,0 +1,61 @@
+.div-title {
+  display: flex;
+  align-items: center;
+}
+
+.propos-tiret {
+  width: 30%;
+  height: 1px;
+  border: 2px solid white;
+}
+
+.text-propos {
+  width: 90%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-propos-01 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.text-propos-02 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  color: #fecd01;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-propos {
+    font-size: 60px;
+  }
+  .propos-tiret {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .propos-tiret {
+    width: 0%;
+    border: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-propos {
+    font-size: 35px;
+  }
+}
