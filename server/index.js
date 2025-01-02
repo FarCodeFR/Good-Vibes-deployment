@@ -153,6 +153,10 @@ app.get("/news", (req, res) => {
 	res.send(news);
 });
 
+app.get("/", (req, res) => {
+	res.send();
+});
+
 app.listen(3000, () => {
 	console.log("Serveur démarré sur http://localhost:3000");
 });
